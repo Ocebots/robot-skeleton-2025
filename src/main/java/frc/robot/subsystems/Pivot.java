@@ -10,15 +10,15 @@ import frc.robot.config.PivotConfig;
 
 public class Pivot extends SubsystemBase {
   private SparkMax pivot = new SparkMax(1, SparkLowLevel.MotorType.kBrushless);
-  private PIDController pidController =
+  private PIDController pidcontroller =
       new PIDController(PivotConfig.PIVOT_P, PivotConfig.PIVOT_I, PivotConfig.PIVOT_D);
 
   public Pivot() {
-    pivot.configure(
+    pivot. configure(
         new SparkMaxConfig()
             .smartCurrentLimit(PivotConfig.PIVOT_CURRENT_LIMIT)
             .idleMode(PivotConfig.PIVOT_IDLE_MODE),
-        SparkBase.ResetMode.kNoResetSafeParameters,
+        SparkBase.ResetMode.kResetSafeParameters,
         SparkBase.PersistMode.kPersistParameters);
   }
 }
