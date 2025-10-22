@@ -9,7 +9,7 @@ import edu.wpi.first.wpilibj2.command.SubsystemBase;
 import frc.robot.config.PivotConfig;
 
 public class Pivot extends SubsystemBase {
-  private SparkMax pivot = new SparkMax(1, SparkLowLevel.MotorType.kBrushless);
+  private SparkMax pivot = new SparkMax(2, SparkLowLevel.MotorType.kBrushless);
   private PIDController pidController =
       new PIDController(PivotConfig.PIVOT_P, PivotConfig.PIVOT_I, PivotConfig.PIVOT_D);
 
