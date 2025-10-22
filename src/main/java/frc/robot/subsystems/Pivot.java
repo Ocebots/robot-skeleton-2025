@@ -21,5 +21,5 @@ public class Pivot extends SubsystemBase {
         SparkBase.ResetMode.kResetSafeParameters,
         SparkBase.PersistMode.kPersistParameters);
   }
-  // danny davidio
+  // David Ikeda
 }
